@@ -2,7 +2,7 @@ const http = require('http')
 // console.log(http);
 
 const server = http.createServer(function (req, res) {
-    var ip = req.connection.remoteAddress
+    var ip = req.connection.remoteAddress || req.socket.remoteAddress || req.headers['x-forwarded-for'];
     if (ip != '127.0.0.1') {
         console.log('bad connection', ip)
         res.writeHead('421')
