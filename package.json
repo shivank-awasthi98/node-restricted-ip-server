@@ -8,5 +8,9 @@
     "start": "node server.js"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.2",
+    "sendmail": "^1.6.1"
+  }
 }
