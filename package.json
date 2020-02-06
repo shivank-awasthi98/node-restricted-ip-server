@@ -1,0 +1,12 @@
+{
+  "name": "bluerang-server-ip",
+  "version": "1.0.0",
+  "description": "a server which accepts connection only from single ip",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
